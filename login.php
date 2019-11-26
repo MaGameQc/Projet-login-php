@@ -1,3 +1,23 @@
+<?php 
+    session_start();
+
+    if(isset($_POST["submit"])) {
+        $_SESSION["courriel"] = $_POST["courriel"];
+        $_SESSION["password"] = $_POST["password"];
+        
+        echo "<h4> votre prénom est : " . $_SESSION["courriel"] . "</h4><br>";
+        echo "<h4> votre nom de famille est : " . $_SESSION["password"] . "</h4><br>";
+        
+        
+         header("Location: acces.php"); 
+        
+    }
+
+    
+
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,7 +28,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Connexion</title>
   </head>
   <body>
       
@@ -32,7 +52,7 @@
           <div class="row">
                 <div class="col-sm-2 col-xl-2  mx-auto ">
               
-                  <img src="thanosTom.jpg" class="img-fluid rounded-circle " alt="Responsive image">
+                  <img src="avatar.png" class="img-fluid rounded-circle " alt="Responsive image">
               
                 </div>
           </div>
@@ -42,18 +62,18 @@
           <div class="row">
               <div class="col-md-8 mx-auto">
               
-                    <form class="col-md-6 mx-auto">
+                    <form class="col-md-6 mx-auto" action="" method="post">
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="exampleInputEmail1">Votre Prénom</label>
+                        <input name="courriel" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputPassword1">Votre Nom</label>
+                        <input name="password" type="text" class="form-control" id="exampleInputPassword1">
                       </div>
 
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button name="submit" type="submit" class="btn btn-primary" >Submit</button>
                     </form>
               
               </div>
@@ -64,6 +84,8 @@
           
           
       </div>
+      
+
       
 
       

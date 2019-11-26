@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+
+        echo "<h4> votre prénom est : " . $_SESSION["courriel"] . "</h4><br>";
+        echo "<h4> votre nom de famille est : " . $_SESSION["password"] . "</h4><br>";
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,58 +20,7 @@
   </head>
   <body>
       
-      <div class="container-fluid p-4">
-      
-        <div class="row">
-          
-            <div class="mx-auto ">
-            
-                <h3 style="background-color: #007bff; padding: 5%; text-align:center;" class="rounded-pill">formulaire de contact</h3>
-            
-            </div>
-              
-        
-        </div>
-          
-      </div>
-    
-      <div class="container-fluid p-4 " style="margin-top : 10%; background: grey;">
-          
-          <div class="row">
-                <div class="col-sm-2 col-xl-2  mx-auto ">
-              
-                  <img src="thanosTom.jpg" class="img-fluid rounded-circle " alt="Responsive image">
-              
-                </div>
-          </div>
 
-          
-          
-          <div class="row">
-              <div class="col-md-8 mx-auto">
-              
-                    <form class="col-md-6 mx-auto">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                      </div>
-
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-              
-              </div>
-
-          
-          </div>
-
-          
-          
-      </div>
       
 
       
