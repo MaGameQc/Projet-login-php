@@ -1,6 +1,6 @@
 
       
-      <div class="container-fluid p-0 h-auto" style="position: float; bottom:0px;">
+      <div class="container-fluid p-0 h-auto" style="position: absolute; bottom:0px;">
       
         <div class="row m-0" style="background-color: #007bff; ">
           

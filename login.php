@@ -30,9 +30,9 @@
 
     <title>Connexion</title>
   </head>
-  <body>
+  <body style="background-image: url('back.jpg'); background-size:cover;">
       
-      <div class="container-fluid p-4">
+      <div class="container-fluid p-4" style="position:relative;" >
       
         <div class="row">
           
@@ -47,7 +47,7 @@
           
       </div>
     
-      <div class="container-fluid p-4 " style="margin-top : 5%; background: grey;">
+      <div class="container-fluid p-4 " style=" background: grey;">
           
           <div class="row">
                 <div class="col-sm-2 col-xl-2  mx-auto " style="text-align:center;">
