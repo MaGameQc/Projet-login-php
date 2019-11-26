@@ -38,7 +38,7 @@
           
             <div class="mx-auto ">
             
-                <h3 style="background-color: #007bff; padding: 5%; text-align:center;" class="rounded-pill">formulaire de contact</h3>
+                <h3 style="background-color: #007bff; padding: 5%; text-align:center;" class="rounded-pill">entrez votre nom</h3>
             
             </div>
               
@@ -47,10 +47,10 @@
           
       </div>
     
-      <div class="container-fluid p-4 " style="margin-top : 10%; background: grey;">
+      <div class="container-fluid p-4 " style="margin-top : 5%; background: grey;">
           
           <div class="row">
-                <div class="col-sm-2 col-xl-2  mx-auto ">
+                <div class="col-sm-2 col-xl-2  mx-auto " style="text-align:center;">
               
                   <img src="avatar.png" class="img-fluid rounded-circle " alt="Responsive image">
               
@@ -85,7 +85,8 @@
           
       </div>
       
-
+      
+      <?php include "footer.php" ?>
       
 
       
