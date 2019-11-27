@@ -38,7 +38,7 @@
           
             <div class="mx-auto ">
             
-                <h3 style="background-color: #007bff; padding: 5%; text-align:center;" class="rounded-pill">entrez votre nom</h3>
+                <h3 style="background-color: #007bff; padding: 5%; text-align:center; color:white;" class="rounded-pill">entrez votre nom</h3>
             
             </div>
               
