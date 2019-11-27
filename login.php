@@ -27,6 +27,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,18 +46,20 @@
       
         <div class="row">
           
-            <div class="mx-auto ">
+            <div class="mx-auto " style="" id="titleDiv">
             
-                <h3 style="background-color: #007bff; padding: 5%; text-align:center; color:white;" class="rounded-pill">Enter Your Name</h3>
+                <h3 style="background-color: #007bff; padding: 5%; text-align:center; color:white;" class="rounded-pill">The Weather App</h3>
             
             </div>
+            
+
               
         
         </div>
           
       </div>
     
-      <div class="container-fluid p-4 col-8" style=" background: #273b66;  color:white;">
+      <div class="container-fluid p-4 col-8" style=" background: #273b66;  color:white; box-shadow: 0 0 10px black;">
           
           <div class="row">
                 <div class="col-sm-2 col-xl-2  mx-auto " style="text-align:center;">
@@ -100,11 +106,19 @@
       
 
       
+            
 
+      
     <!-- Optional JavaScript -->
+<!--      <script type="text/javascript" src="index.js"></script>-->
+      
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+      
+
+      
+
   </body>
 </html>
