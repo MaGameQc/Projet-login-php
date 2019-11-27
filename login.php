@@ -2,14 +2,20 @@
     session_start();
 
     if(isset($_POST["submit"])) {
+        
+        
         $_SESSION["courriel"] = $_POST["courriel"];
         $_SESSION["password"] = $_POST["password"];
         
-        echo "<h4> votre prénom est : " . $_SESSION["courriel"] . "</h4><br>";
-        echo "<h4> votre nom de famille est : " . $_SESSION["password"] . "</h4><br>";
+//        echo "<h4> votre prénom est : " . $_SESSION["courriel"] . "</h4><br>";
+//        echo "<h4> votre nom de famille est : " . $_SESSION["password"] . "</h4><br>";
         
         
+        if($_SESSION["password"] && $_SESSION["courriel"] != ""){
          header("Location: acces.php"); 
+            } else {
+            echo "<h4>Please, enter your name.</h4><br>";
+        }
         
     }
 
@@ -30,7 +36,7 @@
 
     <title>Connexion</title>
   </head>
-  <body style="background-image: url('back.jpg'); background-size:cover;">
+  <body style="background: url('back.jpg') no-repeat center center fixed; overflow: auto;">
       
       <div class="container-fluid p-4" style="position:relative;" >
       
@@ -38,7 +44,7 @@
           
             <div class="mx-auto ">
             
-                <h3 style="background-color: #007bff; padding: 5%; text-align:center; color:white;" class="rounded-pill">entrez votre nom</h3>
+                <h3 style="background-color: #007bff; padding: 5%; text-align:center; color:white;" class="rounded-pill">Enter Your Name</h3>
             
             </div>
               
@@ -47,7 +53,7 @@
           
       </div>
     
-      <div class="container-fluid p-4 " style=" background: grey;">
+      <div class="container-fluid p-4 col-8" style=" background: #273b66;  color:white;">
           
           <div class="row">
                 <div class="col-sm-2 col-xl-2  mx-auto " style="text-align:center;">
@@ -59,17 +65,17 @@
 
           
           
-          <div class="row">
-              <div class="col-md-8 mx-auto">
+          <div class="row" >
+              <div class="col-md-8 mx-auto" >
               
                     <form class="col-md-6 mx-auto" action="" method="post">
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Votre Prénom</label>
+                        <label for="exampleInputEmail1">First Name</label>
                         <input name="courriel" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Votre Nom</label>
+                        <label for="exampleInputPassword1">Last Name</label>
                         <input name="password" type="text" class="form-control" id="exampleInputPassword1">
                       </div>
 
@@ -85,6 +91,10 @@
           
       </div>
       
+<div style="margin-bottom: 25%;">
+      
+      
+      </div>
       
       <?php include "footer.php" ?>
       

@@ -10,6 +10,8 @@
 
 
 <?php
+
+
 $apiKey = "be40ddd99fa6c67ae22093bb962c8c6a";
 $cityId = "6077265";
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=metric&APPID=" . $apiKey;
@@ -46,15 +48,18 @@ $currentTime = time();
   <body style="background-image: url('back.jpg'); background-size:cover;">
       
 
-      <h1 style="color : white;">Bonjour <?php echo $_SESSION["courriel"] . $_SESSION["password"] ?> vous êtes actuellement connecté</h1>
+      <h1 style="color : white;" class="p-4">Welcome <?php echo $_SESSION["courriel"] . $_SESSION["password"] ?> you are actually connected</h1>
 
       
       
-      
-        <div class="report-container">
-        <h2><?php echo $data->name; ?> Température</h2>
+    <div class="container-fluid ">
+    <div class="row col-12">
+        
+        
+        <div class="report p-4 mx-auto rounded" style="background-color: #273b66; color: white; text-align:center; box-shadow: 0 0 10px black;">
+        <h2 style="background-color: #007bff;" class="p-4 rounded"><?php echo $data->name; ?> Weather Status </h2>
         <div class="time">
-            <div><?php echo date("l g:i a", $currentTime); ?></div>
+            <div><?php echo  date("l g:i a", $currentTime); ?></div>
             <div><?php echo date("jS F, Y",$currentTime); ?></div>
             <div><?php echo ucwords($data->weather[0]->description); ?></div>
         </div>
@@ -69,13 +74,16 @@ $currentTime = time();
             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
         </div>
     </div>
-      
+        
+        
+    </div>
+  </div>
       
       
       
       <?php include "footer.php" ?>
 
-    <!-- Optional JavaScript -->
+     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
