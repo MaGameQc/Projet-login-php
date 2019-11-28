@@ -47,13 +47,13 @@ $currentTime = time();
   </head>
   <body style="background-image: url('back.jpg'); background-size:cover;">
       
-
-      <h1 style="color : white;" class="p-4">Welcome <?php echo $_SESSION["courriel"] . $_SESSION["password"] ?> you are actually connected</h1>
+<section style="padding-bottom: 8vh; min-height: 92vh;">
+      <h1 style="color : white; text-align: center; text-shadow: 2px 2px 6px black;" class="p-4">Welcome <?php echo $_SESSION["courriel"] . $_SESSION["password"] ?> you are actually connected</h1>
 
       
       
-    <div class="container-fluid ">
-    <div class="row col-12">
+    <div class="container-fluid " style="padding-bottom: 8vh;">
+    <div class="row p-4">
         
         
         <div class="report p-4 mx-auto rounded" style="background-color: #273b66; color: white; text-align:center; box-shadow: 0 0 10px black;">
@@ -79,7 +79,7 @@ $currentTime = time();
     </div>
   </div>
       
-      
+  </section>    
       
       <?php include "footer.php" ?>
 

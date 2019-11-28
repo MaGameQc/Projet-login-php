@@ -42,6 +42,8 @@
   </head>
   <body style="background: url('back.jpg') no-repeat center center fixed; overflow: auto;">
       
+      
+  <section style="padding-bottom: 8vh; min-height: 92vh;">
       <div class="container-fluid p-4" style="position:relative;" >
       
         <div class="row">
@@ -97,10 +99,7 @@
           
       </div>
       
-<div style="margin-bottom: 25%;">
-      
-      
-      </div>
+</section>
       
       <?php include "footer.php" ?>
       
